@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Debug\Http\Controllers;
+namespace LaravelTokyo\Debug\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 

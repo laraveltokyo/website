@@ -1,10 +1,10 @@
 <?php
 
-use LaravelTokyo\Generator as Addon;
+use LaravelTokyo\Members as Addon;
 
 return [
     'version' => 5,
-    'namespace' => 'LaravelTokyo\Generator',
+    'namespace' => 'LaravelTokyo\Members',
     'directories' => [
         'classes',
     ],
@@ -13,11 +13,14 @@ return [
     ],
     'paths' => [
         'config' => 'config',
+        'assets' => 'resources/assets',
         'lang' => 'resources/lang',
+        'specs' => 'resources/specs',
         'views' => 'resources/views',
     ],
     'providers' => [
         Addon\Providers\AddonServiceProvider::class,
+        Addon\Providers\DatabaseServiceProvider::class,
         Addon\Providers\RouteServiceProvider::class,
     ],
     'console' => [

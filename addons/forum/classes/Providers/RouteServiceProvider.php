@@ -1,13 +1,18 @@
 <?php
 
-namespace LaravelTokyo\Debug\Providers;
+namespace LaravelTokyo\Forum\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    protected $prefix = 'debug';
+    /**
+     * Routing group prefix.
+     *
+     * @var string
+     */
+    protected $prefix = 'addons/forum';
 
     /**
      * This namespace is applied to the controller routes in your routes file.
@@ -16,33 +21,29 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'LaravelTokyo\Debug\Http\Controllers';
+    protected $namespace = 'LaravelTokyo\Forum\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param \Illuminate\Routing\Router $router
      * @return void
      */
     public function boot(Router $router)
     {
-        if (config('app.debug')) {
-            parent::boot($router);
-        }
+        parent::boot($router);
     }
 
     /**
      * Define the routes for the addon.
      *
-     * @param  \Illuminate\Routing\Router  $router  (injection)
+     * @param \Illuminate\Routing\Router $router (injection)
      * @return void
      */
     public function map(Router $router)
     {
-        if (config('app.debug')) {
-            $router->group(['prefix' => $this->prefix, 'namespace' => $this->namespace], function ($router) {
-                require __DIR__.'/../Http/routes.php';
-            });
-        }
+        $router->group(['prefix' => $this->prefix, 'namespace' => $this->namespace], function ($router) {
+            require __DIR__.'/../Http/routes.php';
+        });
     }
 }

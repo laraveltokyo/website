@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Generators\Providers;
+namespace LaravelTokyo\Generator\Providers;
 
 class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
 {
