@@ -1,10 +1,10 @@
 <?php
 
-use LaravelTokyo\Generator as Addon;
+namespace App\Generator;
 
 return [
     'version' => 5,
-    'namespace' => 'LaravelTokyo\Generator',
+    'namespace' => __NAMESPACE__,
     'directories' => [
         'classes',
     ],
@@ -17,8 +17,8 @@ return [
         'views' => 'resources/views',
     ],
     'providers' => [
-        Addon\Providers\AddonServiceProvider::class,
-        Addon\Providers\RouteServiceProvider::class,
+        Providers\AddonServiceProvider::class,
+        Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [

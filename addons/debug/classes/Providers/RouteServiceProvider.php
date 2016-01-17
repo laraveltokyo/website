@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelTokyo\Debug\Providers;
+namespace App\Debug\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -16,7 +16,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'LaravelTokyo\Debug\Http\Controllers';
+    protected $namespace = 'App\Debug\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

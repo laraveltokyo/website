@@ -60,6 +60,7 @@ return [
     'regex'                => ':attribute არ ემთხვევა ფორმატს.',
     'required'             => ':attribute აუცილებელია.',
     'required_if'          => ':attribute აუცილებელია, თუ :other-ის მნიშვნელობა ემთხვევა :value-ს.',
+    'required_unless'      => 'The :attribute field is required unless :other is in :values.',
     'required_with'        => ':attribute აუცილებელია, თუ :values მითითებულია.',
     'required_with_all'    => ':attribute აუცილებელია, თუ :values მითითებულია.',
     'required_without'     => ':attribute აუცილებელია, თუ :values არ არის მითითებული.',
@@ -87,7 +88,7 @@ return [
     |
     */
 
-    'custom' => [
+    'custom'               => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
@@ -104,6 +105,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes'           => [
+        //
+    ],
 
 ];

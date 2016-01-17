@@ -1,10 +1,10 @@
 <?php
 
-use LaravelTokyo\Debug as Addon;
+use App\Debug as Addon;
 
 return [
     'version' => 5,
-    'namespace' => 'LaravelTokyo\Debug',
+    'namespace' => 'App\Debug',
     'directories' => [
         'classes',
     ],

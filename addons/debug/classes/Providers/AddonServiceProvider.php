@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelTokyo\Debug\Providers;
+namespace App\Debug\Providers;
 
 class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
 {

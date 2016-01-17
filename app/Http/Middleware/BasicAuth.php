@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace LaravelTokyo\Http\Middleware;
 
 use Closure;
 

@@ -35,7 +35,7 @@ return [
     'digits'               => 'Довжина цифрового поля :attribute повинна дорівнювати :digits.',
     'digits_between'       => 'Довжина цифрового поля :attribute повинна бути від :min до :max.',
     'email'                => 'Поле :attribute повинне містити коректну електронну адресу.',
-    'filled'               => 'Поле :attribute є обов\'язковим для заповнення.',
+    'filled'               => "Поле :attribute є обов'язковим для заповнення.",
     'exists'               => 'Вибране для :attribute значення не коректне.',
     'image'                => 'Поле :attribute має містити зображення.',
     'in'                   => 'Вибране для :attribute значення не коректне.',
@@ -58,12 +58,13 @@ return [
     'not_in'               => 'Вибране для :attribute значення не коректне.',
     'numeric'              => 'Поле :attribute повинно містити число.',
     'regex'                => 'Поле :attribute має хибний формат.',
-    'required'             => 'Поле :attribute є обов\'язковим для заповнення.',
-    'required_if'          => 'Поле :attribute є обов\'язковим для заповнення, коли :other є рівним :value.',
-    'required_with'        => 'Поле :attribute є обов\'язковим для заповнення, коли :values вказано.',
-    'required_with_all'    => 'Поле :attribute є обов\'язковим для заповнення, коли :values вказано.',
-    'required_without'     => 'Поле :attribute є обов\'язковим для заповнення, коли :values не вказано.',
-    'required_without_all' => 'Поле :attribute є обов\'язковим для заповнення, коли :values не вказано.',
+    'required'             => "Поле :attribute є обов'язковим для заповнення.",
+    'required_if'          => "Поле :attribute є обов'язковим для заповнення, коли :other є рівним :value.",
+    'required_unless'      => 'The :attribute field is required unless :other is in :values.',
+    'required_with'        => "Поле :attribute є обов'язковим для заповнення, коли :values вказано.",
+    'required_with_all'    => "Поле :attribute є обов'язковим для заповнення, коли :values вказано.",
+    'required_without'     => "Поле :attribute є обов'язковим для заповнення, коли :values не вказано.",
+    'required_without_all' => "Поле :attribute є обов'язковим для заповнення, коли :values не вказано.",
     'same'                 => 'Поля :attribute та :other мають співпадати.',
     'size'                 => [
         'numeric' => 'Поле :attribute має бути довжини :size.',
@@ -86,7 +87,7 @@ return [
     |
     */
 
-    'custom' => [
+    'custom'               => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
@@ -103,6 +104,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes'           => [
+        //
+    ],
 
 ];

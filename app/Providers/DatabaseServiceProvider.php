@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Providers;
+namespace LaravelTokyo\Providers;
 
 use Jumilla\Versionia\Laravel\Support\DatabaseServiceProvider as ServiceProvider;
-use App\Database\Migrations;
-use App\Database\Seeds;
+use LaravelTokyo\Database\Migrations;
+use LaravelTokyo\Database\Seeds;
 
 class DatabaseServiceProvider extends ServiceProvider
 {
@@ -20,12 +20,12 @@ class DatabaseServiceProvider extends ServiceProvider
         ]);
 
         $this->migrations('app', [
-            '1.0' => Migrations\App_1_0::class,
+//            '1.0' => Migrations\App_1_0::class,
         ]);
 
         $this->seeds([
             'test' => Seeds\Test::class,
             'production' => Seeds\Production::class,
-        ], 'test');
+        ]);
     }
 }

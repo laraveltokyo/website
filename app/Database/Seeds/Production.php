@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Database\Seeds;
+namespace LaravelTokyo\Database\Seeds;
 
 use Jumilla\Versionia\Laravel\Support\Seeder;
 use Illuminate\Database\Eloquent\Model;

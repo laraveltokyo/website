@@ -13,14 +13,10 @@ return [
     |
     */
 
-    "password" => "Salasanan on oltava vähintään kuusi merkkiä ja ottelu.",
-
-    "user"     => "Emme voi löytää käyttäjälle tämän sähköpostin.",
-
-    "token"    => "Tämä elpyminen poletti salasanan on väärä.",
-
-    "sent"     => "Salasanan muistutus lähetetty!",
-
-    "reset"    => "Password has been reset!",
+    'password' => 'Salasanan on oltava vähintään kuusi merkkiä ja ottelu.',
+    'reset'    => 'Password has been reset!',
+    'sent'     => 'Salasanan muistutus lähetetty!',
+    'token'    => 'Tämä elpyminen poletti salasanan on väärä.',
+    'user'     => 'Emme voi löytää käyttäjälle tämän sähköpostin.',
 
 ];
