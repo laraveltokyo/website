@@ -13,7 +13,7 @@ class ApplicationController extends BaseController
     	$events = [
     		[
     			'datetime_html' => '2016.1.30(土) 13時〜17時',
-    			'content_html' => 'dots.(渋谷)にて、「Laravel 作戦 Kaigi #5」を開催します！申し込みページは準備中です。',
+    			'content_html' => 'dots.(渋谷)にて、「Laravel 作戦 Kaigi #5」を開催します！<a href="http://eventdots.jp/event/579226">イベント詳細・申し込みはこちら</a>から。',
     		],
     	];
 
