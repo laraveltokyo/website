@@ -15,12 +15,12 @@ class DatabaseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->migrations('forum', [
-//            '1.0' => Migrations\Forum_1_0::class,
+        $this->migrations('app-forum', [
+            '1.0' => Migrations\AppForum_1_0::class,
         ]);
 
         $this->seeds([
-//            'forum-test' => Seeds\Test::class,
+//            'app-forum-test' => Seeds\Test::class,
         ]);
     }
 }

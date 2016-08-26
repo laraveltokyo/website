@@ -1,10 +1,10 @@
 <?php
 
-use LaravelTokyo\Forum as Addon;
+namespace LaravelTokyo\Forum;
 
 return [
     'version' => 5,
-    'namespace' => 'LaravelTokyo\Forum',
+    'namespace' => __NAMESPACE__,
     'directories' => [
         'classes',
     ],
@@ -13,29 +13,35 @@ return [
     ],
     'paths' => [
         'config' => 'config',
-        'assets' => 'resources/assets',
-        'lang' => 'resources/lang',
-        'specs' => 'resources/specs',
-        'views' => 'resources/views',
+        'assets' => 'assets',
+        'lang' => 'lang',
+        'specs' => 'specs',
+        'views' => 'views',
+        'tests' => 'tests',
     ],
     'providers' => [
-        Addon\Providers\AddonServiceProvider::class,
-        Addon\Providers\DatabaseServiceProvider::class,
-        Addon\Providers\RouteServiceProvider::class,
+        Providers\AddonServiceProvider::class,
+        Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [
         ],
     ],
     'http' => [
-        'domain' => env('APP_FORUM_DOMAIN'),
-        'prefix' => env('APP_FORUM_PATH'),
         'middlewares' => [
         ],
         'route_middlewares' => [
         ],
     ],
-    'includes_global_aliases' => true,
-    'aliases' => [
+    'routes' => [
+        'domain' => env('APP_FORUM_DOMAIN', null),
+        'prefix' => env('APP_FORUM_PATH', 'forum'),
+        'namespace' => __NAMESPACE__.'\Controllers',
+        'middleware' => [
+            'web',
+        ],
+        'files' => [
+            'routes.php',
+        ],
     ],
 ];

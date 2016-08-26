@@ -1,10 +1,10 @@
 <?php
 
-use LaravelTokyo\Entrance as Addon;
+namespace LaravelTokyo\Entrance;
 
 return [
     'version' => 5,
-    'namespace' => 'LaravelTokyo\Entrance',
+    'namespace' => __NAMESPACE__,
     'directories' => [
         'classes',
     ],
@@ -13,15 +13,15 @@ return [
     ],
     'paths' => [
         'config' => 'config',
-        'assets' => 'resources/assets',
-        'lang' => 'resources/lang',
-        'specs' => 'resources/specs',
-        'views' => 'resources/views',
+        'assets' => 'assets',
+        'lang' => 'lang',
+        'specs' => 'specs',
+        'views' => 'views',
     ],
     'providers' => [
-        Addon\Providers\AddonServiceProvider::class,
-        Addon\Providers\DatabaseServiceProvider::class,
-        Addon\Providers\RouteServiceProvider::class,
+        Providers\AddonServiceProvider::class,
+        Providers\DatabaseServiceProvider::class,
+        Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [
@@ -33,7 +33,15 @@ return [
         'route_middlewares' => [
         ],
     ],
-    'includes_global_aliases' => true,
-    'aliases' => [
+    'routes' => [
+        'domain' => env('APP_ENTRANCE_DOMAIN', null),
+        'prefix' => env('APP_ENTRANCE_PATH', ''),
+        'namespace' => __NAMESPACE__.'\Controllers',
+        'middleware' => [
+            'web',
+        ],
+        'files' => [
+            'routes.php',
+        ],
     ],
 ];

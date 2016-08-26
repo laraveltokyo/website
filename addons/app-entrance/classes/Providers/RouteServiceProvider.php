@@ -3,21 +3,10 @@
 namespace LaravelTokyo\Entrance\Providers;
 
 use Illuminate\Routing\Router;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Jumilla\Addomnipot\Laravel\Support\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    /**
-     * Define your route model bindings, pattern filters, etc.
-     *
-     * @param \Illuminate\Routing\Router $router
-     * @return void
-     */
-    public function boot(Router $router)
-    {
-        parent::boot($router);
-    }
-
     /**
      * Define the routes for the addon.
      *
@@ -26,12 +15,16 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        $domain = addon()->config('addon.http.domain');
-        $prefix = addon()->config('addon.http.prefix');
-        $namespace = addon()->config('addon.namespace').'\Http\Controllers';
+        parent::map($router);
+    }
 
-        $router->group(['domain' => $domain, 'prefix' => $prefix, 'namespace' => $namespace], function ($router) {
-            require __DIR__.'/../Http/routes.php';
-        });
+    /**
+     * Get addon.
+     *
+     * @return \Jumilla\Addomnipot\Laravel\Addon
+     */
+    protected function addon()
+    {
+        return addon();
     }
 }

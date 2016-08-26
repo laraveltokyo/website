@@ -169,7 +169,6 @@ return [
         LaravelTokyo\Providers\AuthServiceProvider::class,
         LaravelTokyo\Providers\DatabaseServiceProvider::class,
         LaravelTokyo\Providers\EventServiceProvider::class,
-        LaravelTokyo\Providers\RouteServiceProvider::class,
     ],
 
     /*

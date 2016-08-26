@@ -1,16 +1,11 @@
 <?php
 
-namespace App\Debug\Providers;
+namespace LaravelTokyo\Debug\Providers;
 
-class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
+use Jumilla\Addomnipot\Laravel\Support\AddonServiceProvider as ServiceProvider;
+
+class AddonServiceProvider extends ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
     /**
      * Register the service provider.
      *
@@ -30,15 +25,18 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
+        $this->setupPublishFiles();
     }
 
     /**
-     * Get the services provided by the provider.
+     * Setup publish files.
      *
-     * @return array
+     * @return void
      */
-    public function provides()
+    protected function setupPublishFiles()
     {
-        return [];
+        $this->publishes([
+//            addon_path(addon_name(), 'public') => base_path('public'),
+        ]);
     }
 }

@@ -1,31 +1,49 @@
 <?php
 
-use App\Debug as Addon;
+namespace LaravelTokyo\Debug;
 
 return [
     'version' => 5,
-    'namespace' => 'App\Debug',
+    'namespace' => __NAMESPACE__,
     'directories' => [
         'classes',
     ],
+    'files' => [
+        'helpers.php',
+    ],
     'paths' => [
-        'assets' => 'resources\/assets',
-        'lang' => 'resources\/lang',
-        'specs' => 'resources\/specs',
-        'views' => 'resources\/views',
+        'config' => 'config',
+        'lang' => 'lang',
+        'specs' => 'specs',
+        'views' => 'views',
         'tests' => 'tests',
     ],
     'providers' => [
-        Addon\Providers\AddonServiceProvider::class,
-        Addon\Providers\RouteServiceProvider::class,
-    ],
-    'console' => [
-        'commands' => [],
-    ],
-    'http' => [
-        'middlewares' => [],
-        'route_middlewares' => [],
+        Providers\AddonServiceProvider::class,
+        Providers\RouteServiceProvider::class,
     ],
     'includes_global_aliases' => true,
-    'aliases' => [],
+    'aliases' => [
+    ],
+    'console' => [
+        'commands' => [
+        ],
+    ],
+    'http' => [
+        'middlewares' => [
+        ],
+        'route_middlewares' => [
+        ],
+    ],
+    'routes' => [
+        'domain' => env('APP_ADDON_DOMAIN'),
+        'prefix' => env('APP_ADDON_PATH', 'debug'),
+        'namespace' => __NAMESPACE__.'\Controllers',
+        'middleware' => [
+            'web',
+        ],
+        'files' => [
+            'routes.php',
+        ],
+    ],
 ];

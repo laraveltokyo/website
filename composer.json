@@ -1,24 +1,24 @@
 {
-	"name": "laravel-plus/laravel5",
-	"description": "The Laravel Skeleton.",
-	"keywords": ["framework", "laravel"],
+	"name": "laravel-tokyo/services",
+	"description": "Laravel Tokyo Website.",
+	"keywords": ["laravel", "community"],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.5.9",
-        "laravel/framework": "5.2.*",
+        "php": ">=5.6.4",
+        "laravel/framework": "5.3.*",
 		"laravel/socialite": "^2.0",
-		"laravel-plus/extension": "^3.1",
+		"laravel-plus/extension": "^3.5",
 		"guzzlehttp/guzzle": "^6.1",
 		"barryvdh/laravel-debugbar": "^2.0"
     },
     "require-dev": {
-		"fabpot/php-cs-fixer": "~1.8",
+		"friendsofphp/php-cs-fixer": "~1.8",
         "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~5.0",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "symfony/css-selector": "2.8.*|3.0.*",
-        "symfony/dom-crawler": "2.8.*|3.0.*"
+        "symfony/css-selector": "3.1.*",
+        "symfony/dom-crawler": "3.1.*"
     },
     "autoload": {
         "psr-4": {
@@ -40,13 +40,11 @@
 			"php artisan database:upgrade"
         ],
         "post-install-cmd": [
-            "php artisan clear-compiled",
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
-        "pre-update-cmd": [
-            "php artisan clear-compiled"
-        ],
         "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
         ]
     },
