@@ -741,16 +741,16 @@
         },
         {
             "name": "laravel-plus/extension",
-            "version": "v3.5.1",
+            "version": "v3.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jumilla/laravel-extension.git",
-                "reference": "9c79a920566011e20507ebc4da258822fc375736"
+                "reference": "979d11975a0044c0722e329d0bf22bd3441fca64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jumilla/laravel-extension/zipball/9c79a920566011e20507ebc4da258822fc375736",
-                "reference": "9c79a920566011e20507ebc4da258822fc375736",
+                "url": "https://api.github.com/repos/jumilla/laravel-extension/zipball/979d11975a0044c0722e329d0bf22bd3441fca64",
+                "reference": "979d11975a0044c0722e329d0bf22bd3441fca64",
                 "shasum": ""
             },
             "require": {
@@ -792,7 +792,7 @@
                 "laravel 5",
                 "migration"
             ],
-            "time": "2016-08-26 17:01:12"
+            "time": "2016-08-26 17:09:52"
         },
         {
             "name": "laravel/framework",
