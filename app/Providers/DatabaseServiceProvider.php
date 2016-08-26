@@ -17,10 +17,7 @@ class DatabaseServiceProvider extends ServiceProvider
     {
         $this->migrations('framework', [
             '1.0' => Migrations\Framework_1_0::class,
-        ]);
-
-        $this->migrations('app', [
-//            '1.0' => Migrations\App_1_0::class,
+            '1.1' => Migrations\Framework_1_1::class,
         ]);
 
         $this->seeds([
