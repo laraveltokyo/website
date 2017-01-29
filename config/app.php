@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -143,16 +143,7 @@ return [
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
-        // [BEGIN] expand from Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class
-        // {{
-        Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
-        Illuminate\Console\ScheduleServiceProvider::class,
-//        Illuminate\Database\MigrationServiceProvider::class,
-//        Illuminate\Database\SeedServiceProvider::class,
-        Illuminate\Foundation\Providers\ComposerServiceProvider::class,
-        Illuminate\Queue\ConsoleServiceProvider::class,
-        // }}
-        // [END] expand from Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class
+        // Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
         Illuminate\Encryption\EncryptionServiceProvider::class,
@@ -203,6 +194,7 @@ return [
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
         'Auth'      => Illuminate\Support\Facades\Auth::class,
         'Blade'     => Illuminate\Support\Facades\Blade::class,
+        'Bus'       => Illuminate\Support\Facades\Bus::class,
         'Cache'     => Illuminate\Support\Facades\Cache::class,
         'Config'    => Illuminate\Support\Facades\Config::class,
         'Cookie'    => Illuminate\Support\Facades\Cookie::class,

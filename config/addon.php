@@ -4,6 +4,6 @@ return [
     'path' => 'addons',
 
     'additional_paths' => [
-        'laravel-tokyo' => 'app-laravel-tokyo',
+        'laravel-tokyo' => 'app-laraveltokyo',
     ],
 ];

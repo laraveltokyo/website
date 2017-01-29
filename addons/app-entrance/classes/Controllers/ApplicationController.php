@@ -21,6 +21,10 @@ class ApplicationController extends BaseController
 
     	$news = [
     		[
+				'date_html' => '2017.1.24',
+				'content_html' => 'Laravel 5.4がリリースされました！',
+			],
+    		[
 				'date_html' => '2016.8.23',
 				'content_html' => 'Laravel 5.3がリリースされました！',
 			],

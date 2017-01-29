@@ -39,20 +39,20 @@
 
 	<header id="header">
 		<h1 id="logo">
-			<a href="http://laravel.tokyo"><img src="/assets/images/header_logo.png" alt="Laravel東京ユーザーグループ ホームページ"></a>
+			<a href="https://laravel.tokyo"><img src="/assets/images/header_logo.png" alt="Laravel東京ユーザーグループ ホームページ"></a>
 		</h1>
 		<ul id="nav">
 			<!--<li class="item1">
 				<a href="#">スポンサー</a>
 			</li>-->
 			<li class="item2">
-				<a href="http://forum.laravel.tokyo">フォーラム</a>
+				<a href="https://www.facebook.com/groups/laraveltokyo/">フォーラム</a>
 			</li>
 			<li class="item4">
 				<a href="https://github.com/laraveltokyo" target="_blank">Git</a>
 			</li>
 			<li class="item5">
-				<a href="http://laravel.com/" target="_blank">laravel.com</a>
+				<a href="https://laravel.com/" target="_blank">laravel.com</a>
 			</li>
 		</ul>
 	</header>
@@ -63,7 +63,7 @@
 				<div id="jumbotron-title1" class="title"><img src="assets/images/con_title1.png" alt="Laravel ‐ララベル"></div>
 				<div id="jumbotron-title2" class="title"><img src="assets/images/con_title2.png" alt="トウキョウユーザーグループ"></div>
 				<div id="jumbotron-text1" class="text shuffle">Laravel is The hottest PHP framework now</div>
-				<div id="jumbotron-text2" class="text shuffle">The latest version: 5.3</div>
+				<div id="jumbotron-text2" class="text shuffle">The latest version: 5.4</div>
 
 				<div id="jumbotron-description">
 					<img src="assets/images/footer_title.png" alt="THE PHP FRAMEWORK FOR WEB ARTISANS.PHP THAT DOESN'T HURT. CODE HAPPY &amp; ENJOY THE FRESH AIR.">

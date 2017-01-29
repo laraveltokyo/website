@@ -23,16 +23,6 @@ return [
         Providers\DatabaseServiceProvider::class,
         Providers\RouteServiceProvider::class,
     ],
-    'console' => [
-        'commands' => [
-        ],
-    ],
-    'http' => [
-        'middlewares' => [
-        ],
-        'route_middlewares' => [
-        ],
-    ],
     'routes' => [
         'domain' => env('APP_ENTRANCE_DOMAIN', null),
         'prefix' => env('APP_ENTRANCE_PATH', ''),
