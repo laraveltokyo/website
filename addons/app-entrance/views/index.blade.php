@@ -63,7 +63,7 @@
 				<div id="jumbotron-title1" class="title"><img src="assets/images/con_title1.png" alt="Laravel ‐ララベル"></div>
 				<div id="jumbotron-title2" class="title"><img src="assets/images/con_title2.png" alt="トウキョウユーザーグループ"></div>
 				<div id="jumbotron-text1" class="text shuffle">Laravel is The hottest PHP framework now</div>
-				<div id="jumbotron-text2" class="text shuffle">The latest version: 5.4</div>
+				<div id="jumbotron-text2" class="text shuffle">The latest version: 5.5</div>
 
 				<div id="jumbotron-description">
 					<img src="assets/images/footer_title.png" alt="THE PHP FRAMEWORK FOR WEB ARTISANS.PHP THAT DOESN'T HURT. CODE HAPPY &amp; ENJOY THE FRESH AIR.">
